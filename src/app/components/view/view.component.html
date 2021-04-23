@@ -1,0 +1,14 @@
+<div>
+<mat-tab-group #tabGroup mat-align-tabs="center" backgroundColor="primary">
+    <mat-tab label="User"> User information from service</mat-tab>
+    <mat-tab label="Project"> project information from service </mat-tab>
+    <mat-tab label="Task"> task information from service</mat-tab>
+  </mat-tab-group>
+
+  <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+      
+  </mat-paginator>
+  <button mat-raised-button >Add </button>
+  <button mat-raised-button > Remove </button>
+  <button mat-raised-button > Update </button>
+</div>
