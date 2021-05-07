@@ -18,6 +18,10 @@ import { ProjectComponent } from './components/project/project.component';
 import { TaskComponent } from './components/task/task.component';
 import { ViewComponent } from './components/view/view.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import {HttpClient} from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -29,8 +33,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ViewComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, BrowserAnimationsModule, FlexLayoutModule, MatFormFieldModule, 
-    MatInputModule, MatButtonModule, MatCardModule, MatToolbarModule, MatTableModule, MatTabsModule, MatPaginatorModule
+    BrowserModule, AppRoutingModule, BrowserAnimationsModule, FlexLayoutModule, MatFormFieldModule, FormsModule, MatDialogModule,
+    MatInputModule, MatButtonModule, MatCardModule, MatToolbarModule, MatTableModule, MatTabsModule, MatPaginatorModule,HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]

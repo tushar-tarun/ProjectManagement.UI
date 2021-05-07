@@ -1,1 +1,16 @@
-<p>project works!</p>
+<mat-form-field appearance="fill">
+  <mat-label>ID</mat-label>
+  <input matInput placeholder="id" [(ngModel)]="id" type="text" name="id" required>
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Name</mat-label>
+  <input matInput placeholder="Name" [(ngModel)]="Name" type="Name" name="Name" required>
+  <mat-form-field appearance="fill">
+    <mat-label>details</mat-label>
+    <input matInput placeholder="details" [(ngModel)]="details" type="details" name="details" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>CreatedOn</mat-label>
+    <input matInput placeholder="CreatedOn" [(ngModel)]="CreatedOn" type="date" name="CreatedOn" required>
+  </mat-form-field>
+  <button mat-raised-button type="submit" (click)="onSubmit()">submit</button>
